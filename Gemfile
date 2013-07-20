@@ -23,10 +23,14 @@ gem 'turbolinks', '~> 1.3.0'
 # json
 gem 'jbuilder', '~> 1.2'
 
+
 gem 'bourbon', '~> 3.1.8'
 gem 'neat', '~> 1.3.0'
 gem 'high_voltage', '~> 1.2.3'
 gem 'normalize-rails', '~> 2.1.1'
+
+# better forms
+gem 'simple_form', '~> 3.0.0.rc'
 
 # heroku
 group :production do
