@@ -1,0 +1,54 @@
+#page-header
+  +retina-image(stripes, 640px 3px)
+  background-repeat: repeat-x
+
+#page-header-inner
+  @extend %container
+  min-height: 105px
+
+  #logo
+    +span-columns(3 of 12)
+    a
+      +retina-image(logo, 148px 23px)
+      display: block
+      width: 148px
+      height: 23px
+      +hide-text
+      margin: 41px 0 0 0
+
+
+nav#page-nav
+  +span-columns(9 of 12)
+
+  ul
+    list-style-type: none
+    margin: 16px 0 0 0
+    padding: 0
+    text-align: right
+
+  li
+    display: inline
+
+    &.noticias
+      a:hover
+        color: $noticias-color
+
+    &.esportes
+      a:hover
+        color: $esportes-color
+
+    &.entretenimento
+      a:hover
+        color: $entretenimento-color
+
+  a
+    display: inline-block
+    text-decoration: none
+    color: #666
+    padding: 30px
+    text-transform: uppercase
+    font-size: em(13)
+
+    &:last-of-type
+      padding-right: 0
+

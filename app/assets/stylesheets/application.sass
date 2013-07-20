@@ -1,0 +1,30 @@
+@charset "utf-8"
+@import base
+@import common
+@import layout
+@import header
+
+
+=debug
+  background-color: rgba(red, .1)
+
+
+
+%container
+  +outer-container
+
+
+
+
+
+
+#more-articles
+  @extend %container
+  .category
+    +span-columns(4 of 12)
+    +omega(3n)
+
+    article
+
+      img
+        float: left
