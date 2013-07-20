@@ -2,9 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 
-# database
-gem 'sqlite3', '~> 1.3.7'
-
 # slim (better html)
 gem 'slim-rails', '~> 2.0.1'
 
@@ -32,4 +29,10 @@ group :production do
   gem 'rails_12factor'
   # database
   gem 'pg'
+end
+
+# notebook
+group :development do
+  # database
+  gem 'sqlite3', '~> 1.3.7'
 end
