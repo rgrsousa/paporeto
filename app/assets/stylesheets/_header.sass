@@ -1,6 +1,13 @@
 #page-header
-  +retina-image(stripes, 640px 3px)
-  background-repeat: repeat-x
+  position: relative
+
+  &:before
+    content: ''
+    $bp: ($noticias-color 15%, $esportes-color 30%, $entretenimento-color 45%, $noticias-color 60%, $esportes-color 75%, $entretenimento-color 90%, $noticias-color 100%)
+    +background-image(stripes($bp, to right))
+    height: 3px
+    width: 100%
+    display: block
 
 #page-header-inner
   @extend %container
