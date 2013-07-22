@@ -1,14 +1,3 @@
-header#page-header
-  #page-header-inner
-    #logo
-      = link_to 'Paporeto.com', '#'
-
-    nav#page-nav
-      ul
-        li.noticias = link_to 'Notícias', '#'
-        li.esportes = link_to 'Esportes', '#'
-        li.entretenimento = link_to 'Entretenimento', '#'
-
 section#featured-article
   article.esportes
     = image_tag 'temp/featured-home.jpg', onload: "this.parentNode.style.backgroundImage = 'url('+this.src+')'"
@@ -68,4 +57,4 @@ section#more-articles
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
         h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
 
-
+= render 'shared/send_news'

@@ -2,6 +2,9 @@ body
   background-color: $body-background
   font-family: $helvetica
 
+a
+  color: #7e60d0
+
 // Fluid medias
 // ----------------------------------------/
 img, embed, object, video
@@ -57,3 +60,53 @@ img, embed, object, video
   margin: 0
   padding: em(2) em(4)
   text-shadow: none
+
+.send-news
+  .send-news-inner
+    @extend %container
+    margin-top: 30px
+    background-color: #f0f0f0
+    border-radius: 4px
+    text-align: center
+    font-size: 22px
+    font-weight: $bold
+    a
+      font-weight: $regular
+      +inline-block
+      padding-left: 10px
+
+
+footer#page-footer
+  margin: 30px 0 90px 0
+  #page-footer-inner
+    border-top: 1px solid #eee
+    padding-top: 30px
+    @extend %container
+    +clearfix
+    color: #888
+
+    a
+      color: #888
+      &:hover
+        color: black
+
+    .credits
+      font-weight: $light
+      font-size: em(13)
+
+    .logo
+      float: left
+      margin-right: 20px
+      a
+        display: block
+        +size(83px 28px)
+        +retina-image(logo-startae, 83px 28px)
+        +hide-text
+        opacity: .2
+        &:hover
+          opacity: .7
+    .copy
+      float: left
+      p
+        margin: 0
+        padding: 0

@@ -22,4 +22,5 @@ html.no-js lang='#{I18n.locale}'
   body
     = render 'shared/header'
     = yield
+    = render 'shared/footer'
     = render 'shared/development' if Rails.env.development?
