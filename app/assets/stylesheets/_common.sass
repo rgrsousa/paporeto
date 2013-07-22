@@ -1,3 +1,7 @@
+body
+  background-color: $body-background
+  font-family: $helvetica
+
 // Fluid medias
 // ----------------------------------------/
 img, embed, object, video
@@ -19,3 +23,37 @@ img, embed, object, video
   +outer-container
 
 
+
+
+.noticias
+  &.category h1, .category
+    background-color: $noticias-color
+  a
+    color: $noticias-color
+    &:hover
+      color: darken($noticias-color, 10%)
+.esportes
+  &.category h1, .category
+    background-color: $esportes-color
+  a
+    color: $esportes-color
+    &:hover
+      color: darken($esportes-color, 10%)
+.entretenimento
+  &.category h1
+    background-color: $entretenimento-color
+  a
+    color: $entretenimento-color
+    &:hover
+      color: darken($entretenimento-color, 10%)
+
+
+%category-title
+  font-size: em(15)
+  text-transform: uppercase
+  font-weight: $semibold
+  +inline-block
+  color: white
+  margin: 0
+  padding: em(2) em(4)
+  text-shadow: none

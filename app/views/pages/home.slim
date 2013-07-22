@@ -10,15 +10,17 @@ header#page-header
         li.entretenimento = link_to 'Entretenimento', '#'
 
 section#featured-article
-  article
+  article.esportes
     = image_tag 'temp/featured-home.jpg', onload: "this.parentNode.style.backgroundImage = 'url('+this.src+')'"
     .article-inner
       = link_to '#' do
+        .category Esportes
         h1 Lyoto Machida garante que está preparado para UFC Rio
 
 section#more-articles
   section.category.noticias
-    h1 Notícias
+    = link_to '#' do
+      h1 Notícias
     article.featured
       = link_to '#' do
         = image_tag 'temp/regular.jpg', width: 260, height: 196
@@ -26,15 +28,16 @@ section#more-articles
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
 
 
   section.category.esportes
-    h1 Esportes
+    = link_to '#' do
+      h1 Esportes
     article.featured
       = link_to '#' do
         = image_tag 'temp/regular.jpg', width: 260, height: 196
@@ -42,15 +45,16 @@ section#more-articles
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
 
 
   section.category.entretenimento
-    h1 Entretenimento
+    = link_to '#' do
+      h1 Entretenimento
     article.featured
       = link_to '#' do
         = image_tag 'temp/regular.jpg', width: 260, height: 196
@@ -58,10 +62,10 @@ section#more-articles
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
 
 

@@ -11,12 +11,15 @@
     bottom: 0
     @extend %container
     padding-right: 10em
+
     &:hover
       text-decoration: underline
 
   h1
     font-size: em(41)
     font-weight: bold
+    margin: 0
+    padding: em(5) 0 em(10) 0
 
   article
     background-color: #f7f7f7
@@ -39,9 +42,56 @@
       width: 0
       height: 0
 
+    .category
+      @extend %category-title
+
+
   .article-inner
     @extend %container
     padding-top: 102px
     display: block
 
 
+
+#more-articles
+  padding-top: 30px
+  @extend %container
+
+  section.category
+    background-color: white
+    padding: 20px
+    +span-columns(4 of 12)
+    +omega(3n)
+
+  article
+
+    a
+      text-decoration: none
+      display: block
+      +clearfix
+      padding: em(15) 0
+      &:hover
+        text-decoration: underline
+
+  h1
+    @extend %category-title
+    margin: 0
+
+  h2
+    font-size: em(16)
+    font-weight: $semibold
+    margin: 0
+    padding: 0
+
+  article.featured
+    img
+      margin: 0 0 em(10) 0
+  article
+    border-bottom: 1px solid #eee
+
+    &:last-of-type
+      border-bottom: none
+
+    img
+      float: left
+      margin-right: em(10)
