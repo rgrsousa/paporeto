@@ -13,13 +13,16 @@ html.no-js lang='#{I18n.locale}'
   head
     meta charset='utf-8'
     meta http-equiv='X-UA-Compatible' content='IE=edge'
-    title Papo Reto
+    - if @title.present?
+      title = @title
+    - else
+      title PapoReto.com — Notícias direto ao ponto, sem enrolação!
     meta name="description" content=""
     meta name='author' content='Startaê — http://www.startae.com.br'
     = csrf_meta_tags
     = favicon_link_tag 'favicon.png', type: 'image/x-icon'
     = stylesheet_link_tag 'application', media: 'all'
-  body
+  body class="#{{@page_class}}"
     = render 'shared/header'
     = yield
     = render 'shared/footer'

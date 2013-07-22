@@ -1,60 +1,64 @@
+- @page_class= 'noticias type-section'
+- @title= 'Notícias'
+
 section#featured-article
-  article.esportes
-    = image_tag 'temp/featured-home.jpg', onload: "this.parentNode.style.backgroundImage = 'url('+this.src+')'"
+  article.noticias
+    = image_tag 'temp/featured-section.jpg', onload: "this.parentNode.style.backgroundImage = 'url('+this.src+')'"
     .article-inner
       = link_to '#' do
-        .category Esportes
-        h1 Lyoto Machida garante que está preparado para UFC Rio
+        .category Notícias
+        h1 Longboard é a nova onda entre os jovens de Brasília
 
-section#more-articles
-  section.category.noticias
-    = link_to '#' do
-      h1 Notícias
-    article.featured
-      = link_to '#' do
-        = image_tag 'temp/regular.jpg', width: 260, height: 196
-        h2 Skateboarding Aenean eu leo quam. Pellentesque ornare sem lacinia.
-    article
-      = link_to '#' do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
-    article
-      = link_to '#' do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+section.latest-articles
+  .latest-articles-inner
+    h1 Últimas notícias
 
+    article
+      = link_to '#' do
+        = image_tag 'temp/thumb.jpg', width: 90, height: 80
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
 
-  section.category.esportes
-    = link_to '#' do
-      h1 Esportes
-    article.featured
-      = link_to '#' do
-        = image_tag 'temp/regular.jpg', width: 260, height: 196
-        h2 Skateboarding Aenean eu leo quam. Pellentesque ornare sem lacinia.
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
         h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
-    article
-      = link_to '#' do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
 
+    article
+      = link_to '#' do
+        = image_tag 'temp/thumb.jpg', width: 90, height: 80
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
 
-  section.category.entretenimento
-    = link_to '#' do
-      h1 Entretenimento
-    article.featured
-      = link_to '#' do
-        = image_tag 'temp/regular.jpg', width: 260, height: 196
-        h2 Skateboarding Aenean eu leo quam. Pellentesque ornare sem lacinia.
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
         h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
+
     article
       = link_to '#' do
         = image_tag 'temp/thumb.jpg', width: 90, height: 80
         h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
+
+    article
+      = link_to '#' do
+        = image_tag 'temp/thumb.jpg', width: 90, height: 80
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
+
+    article
+      = link_to '#' do
+        = image_tag 'temp/thumb.jpg', width: 90, height: 80
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
+
+    article
+      = link_to '#' do
+        = image_tag 'temp/thumb.jpg', width: 90, height: 80
+        h2 Vá de bike Donec id elit non mi porta gravida at eget metus...
+        p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectet...
 
 = render 'shared/send_news'
