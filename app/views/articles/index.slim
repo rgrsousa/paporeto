@@ -1,11 +1,11 @@
 h1 Artigos
+= link_to 'New Article', new_article_path, class: 'btn btn-primary'
 
 table.table
   thead
     tr
       th Title
       th Summary
-      th Body
       th Published at
       th
 
@@ -13,13 +13,9 @@ table.table
     tr
       td = article.title
       td = article.summary
-      td = article.body
-      td = article.published_at
+      td = l article.published_at, format: :short
       td
-        = link_to 'Show', article
-        = link_to 'Edit', edit_article_path(article)
-        = link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete
-
-br
-
-= link_to 'New Article', new_article_path
+        .btn-group.pull-right
+          = link_to 'Show', article, class: 'btn'
+          = link_to 'Edit', edit_article_path(article), class: 'btn'
+          = link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete, class: 'btn'

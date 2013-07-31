@@ -1,10 +1,10 @@
-= simple_form_for(@article) do |f|
+= simple_form_for(@article, html: {class: 'form-inline' }) do |f|
   = f.error_notification
 
   .form-inputs
-    = f.input :title
-    = f.input :summary
-    = f.input :body
+    = f.input :title, input_html: { rows: 6, class: 'input-xxlarge'}
+    = f.input :summary, input_html: { rows: 6, class: 'input-xxlarge'}
+    = f.input :body, input_html: { rows: 6, class: 'input-xxlarge'}
     = f.input :published_at
 
   .form-actions
