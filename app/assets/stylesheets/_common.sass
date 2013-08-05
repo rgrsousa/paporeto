@@ -25,10 +25,13 @@ img, embed, object, video
 %container
   +outer-container
 
-
+.container
+  @extend %container
 
 
 .noticias
+  article.entry h1
+    color: $noticias-color
   &.category h1, .category
     background-color: $noticias-color
   a
@@ -36,6 +39,8 @@ img, embed, object, video
     &:hover
       color: darken($noticias-color, 10%)
 .esportes
+  article.entry h1
+    color: $esportes-color
   &.category h1, .category
     background-color: $esportes-color
   a
@@ -43,6 +48,8 @@ img, embed, object, video
     &:hover
       color: darken($esportes-color, 10%)
 .entretenimento
+  article.entry h1
+    color: $entretenimento-color
   &.category h1
     background-color: $entretenimento-color
   a

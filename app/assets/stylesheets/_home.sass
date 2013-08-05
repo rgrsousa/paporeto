@@ -55,27 +55,20 @@ body.home
     display: block
 
 
+body.home
+  #more-articles
+    padding-top: 30px
+    @extend %container
+
+    section.category
+      background-color: white
+      padding: 20px
+      +span-columns(4 of 12)
+      +omega(3n)
+
+
 
 #more-articles
-  padding-top: 30px
-  @extend %container
-
-  section.category
-    background-color: white
-    padding: 20px
-    +span-columns(4 of 12)
-    +omega(3n)
-
-  article
-
-    a
-      text-decoration: none
-      display: block
-      +clearfix
-      padding: em(15) 0
-      &:hover
-        text-decoration: underline
-
   h1
     @extend %category-title
     margin: 0
@@ -89,8 +82,17 @@ body.home
   article.featured
     img
       margin: 0 0 em(10) 0
+
   article
     border-bottom: 1px solid #eee
+
+    a
+      text-decoration: none
+      display: block
+      +clearfix
+      padding: em(15) 0
+      &:hover
+        text-decoration: underline
 
     &:last-of-type
       border-bottom: none
