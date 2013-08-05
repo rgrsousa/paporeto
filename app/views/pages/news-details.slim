@@ -1,49 +1,40 @@
-section#more-articles
-  section.category.noticias
-    h1 Notícias
-    article.featured
-      = link_to do
-        = image_tag 'temp/regular.jpg', width: 260, height: 196
-        h2 Skateboarding Aenean eu leo quam. Pellentesque ornare sem lacinia.
-    article
-      = link_to do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
-    article
-      = link_to do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+.main
+  article role='main'
+    .post-metadata
+      time 18 de Julho de 2013 às 14h30
 
+    header
+      h1 Vá de bike Donec id elit non mi porta at eget metus mullam risus.
+      h2 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac.
 
-  section.category.esportes
-    h1 Esportes
-    article.featured
-      = link_to do
-        = image_tag 'temp/regular.jpg', width: 260, height: 196
-        h2 Skateboarding Aenean eu leo quam. Pellentesque ornare sem lacinia.
-    article
-      = link_to do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
-    article
-      = link_to do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+    .post-content
+      p Donec sed odio dui. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.
+      p Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper.
+      p Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+      p Cras mattis consectetur purus sit amet fermentum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia qam venenatis vestibulum.
 
+  section.comments
+    .comments-info <b>Julio Protzek</b>, <b>Rafael Torales</b>, <b>Renato Carvalho</b> e mais <b>3 pessoas</b> comentaram
+    ul.comments
+      li class='comment'
+        .photo
+          = image_tag 'http://uifaces.com/faces/lindsay_128.jpg', alt: '', width: 50, height: 50
+        .name Kasper Lorem
+        .body Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes.
+        time 10 minutos atrás
 
-  section.category.entretenimento
-    h1 Entretenimento
-    article.featured
-      = link_to do
-        = image_tag 'temp/regular.jpg', width: 260, height: 196
-        h2 Skateboarding Aenean eu leo quam. Pellentesque ornare sem lacinia.
-    article
-      = link_to do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
-    article
-      = link_to do
-        = image_tag 'temp/thumb.jpg', width: 90, height: 80
-        h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+.sidebar
+  section#more-articles
+    section.category
+      h1 Notícias
+      article.featured
+        = link_to do
+          h2 Skateboarding Aenean eu leo quam. Pellentesque ornare sem lacinia.
+      article
+        = link_to do
+          h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
+      article
+        = link_to do
+          h2 Standup Pedal non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec.
 
-
+  = render 'shared/send_news'
