@@ -126,3 +126,41 @@ section.latest-articles
   img
     float: left
     margin-right: 15px
+
+fieldset
+  border: none
+  margin: 20px 0 0 0
+  padding: 0
+input, textarea
+  width: 100%
+  border: 2px solid #b2b2b2
+  border-radius: 2px
+  background-color: white
+  font-size: 17px
+  font-weight: $light
+  padding: 8px
+  &:focus
+    outline: none
+.form-group
+  padding-bottom: 10px
+
+button
+  @extend %normalise-button
+  background-color: #333
+  text-transform: uppercase
+  color: white
+  border-radius: 3px
+  font-size: 20px
+  font-weight: $bold
+  padding: 20px 40px !important
+
+%normalise-button
+  margin: 0
+  padding: 0
+  outline: 0
+  border: none
+  text-decoration: none
+  text-align: center
+  cursor: pointer
+  vertical-align: middle
+  display: inline-block
